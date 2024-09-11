@@ -1,0 +1,29 @@
+.container_form_consulta {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 3px;
+  padding: 1em;
+}
+
+.container_form_consulta h1 {
+  font-family: 'open_sansregular';
+  font-size: 2.3em;
+  border-bottom: 1px #000000 solid;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+table td {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#td_name {
+  text-align: left;
+}
+
+/*# sourceMappingURL=/cons_customers.baff7b3d.css.map */

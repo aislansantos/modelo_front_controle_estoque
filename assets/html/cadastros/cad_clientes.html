@@ -1,0 +1,85 @@
+<div class="container_form">
+
+  <h1>Cadastro Clientes</h1>
+
+  <form class="form" method="post">
+    <div class="row">
+      <div class="col-md-2 form_grupo">
+        <label for="codigo" class="form_label">Cod.</label>
+        <input type="text" name="txt_codigo" class="form_input" disabled required>
+      </div>
+
+      <div class="col-md-2 form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Ativo
+        </label>
+      </div>
+    </div>
+
+    <div class="col form_grupo">
+      <label for="nome" class="form_label">Nome</label>
+      <input type="text" name="txt_nome" class="form_input" required>
+    </div>
+
+    <div class="row">
+      <div class="col form_grupo">
+        <label for="email" class="form_label">Email</label>
+        <input type="email" name="email" class="form_input" required>
+      </div>
+
+      <div class="col form_grupo">
+        <label for="datanascimento" class="form_label">Data de Nascimento</label>
+        <input type="date" name="datanascimento" class="form_input data" de Nascimento">
+      </div>
+    </div>
+
+
+    <div class="form_grupo">
+      <label for="endereco" class="form_label">Endereco</label>
+      <input type="text" name="endereco" class="form_input" required>
+    </div>
+
+    <div class="form_grupo">
+      <label for="bairro" class="form_label">Bairro</label>
+      <input type="text" name="bairro" class="form_input" required>
+    </div>
+
+    <div class="form_grupo">
+      <!-- <label for="cidade_estado" class="form_label">Cidade e Estado</label> -->
+      <div class="cidade_estado">
+        <div class="form_grupo cidade">
+          <label for="cidade" class="form_label">Cidade</label>
+          <input type="text" name="cidade" class="form_input" required>
+        </div>
+
+        <div class="form_grupo estado">
+          <label for="estado" class="form_label">Estado</label>
+          <select name="estado" class="dropdown " required>
+            <option selected disabled class="form_input form_select_option" value="">Selecione</option>
+            <option value="MG" class="form_select_option">MG</option>
+            <option value="SP" class="form_select_option">SP</option>
+            <option value="RJ" class="form_select_option">RJ</option>
+            <option value="ES" class="form_select_option">ES</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 form_grupo">
+      <label for="telefone" class="form_label telefone">Telefone</label>
+      <input type="telefone" name="telefone" class="form_input" required>
+    </div>
+
+    <div class="submit">
+      <input type="hidden" name="acao" value="enviar">
+      <button type="submit" name="btnCadastrar" class="submit_btn">Cadastrar</button>
+      <a href="#" name="voltar" id="cons_customers" class="submit_btn consultar">Consultar</a>
+    </div>
+
+  </form>
+
+</div>
+
+
+<script src="/assets/js/cadastros/cad_customers.js"></script>

@@ -1,0 +1,43 @@
+.cidade_estado {
+  display: flex;
+  gap: 1em;
+  /* Espaço entre os campos Cidade e Estado */
+}
+
+.cidade_estado .cidade,
+.cidade_estado .estado {
+  flex: 1;
+  /* Faz com que ambos os campos ocupem o mesmo espaço */
+}
+
+.cidade_estado .cidade {
+  margin-right: 1em;
+  /* Espaço entre a coluna da Cidade e a do Estado */
+}
+
+.cidade_estado .estado {
+  display: flex;
+  flex-direction: column;
+}
+
+.cidade_estado .estado .form_label {
+  margin-bottom: 0.25em;
+  /* Reduz o espaço abaixo da label */
+}
+
+.cidade_estado .dropdown {
+  font-size: 16px;
+  /* Ajusta o tamanho da fonte */
+  padding: 8px 15px;
+  /* Adiciona preenchimento */
+  border-radius: 4px;
+  /* Mantém o arredondamento dos cantos */
+  border: 1px #f2f2f2 solid;
+  /* Adiciona a borda */
+  background: #fdfdfd;
+  /* Define a cor de fundo */
+  outline: none;
+  /* Remove o contorno padrão */
+  width: 120px;
+  /* Define uma largura específica menor para o campo de seleção */
+}
